@@ -37,6 +37,15 @@ Provide internet redundancy for a business customer using:
 | ISP2 | ether2 | 178.17.17.1/30 |
 | Customer | ether2 | 178.17.17.2/30 |
 
+## Implementation
+
+- Configured two simulated ISPs using MikroTik RouterOS.
+- Established WAN connectivity through an Internet router connected to a NAT cloud.
+- Configured DHCP services on both ISP routers.
+- Implemented source NAT for internet access.
+- Configured recursive routing on the customer router.
+- Configured automatic failover and failback between primary and backup ISPs.
+
 ## Testing
 
 - Verified internet connectivity through ISP1
@@ -44,7 +53,7 @@ Provide internet redundancy for a business customer using:
 - Verified automatic failover to ISP2
 - Verified automatic failback when ISP1 recovered
 
-  ## Results
+## Results
 
 - Successful automatic failover.
 - Successful automatic failback.
@@ -56,5 +65,8 @@ Provide internet redundancy for a business customer using:
 - Network Redundancy
 - Recursive Routing
 - WAN Failover
+- DHCP
+- NAT
 - MikroTik RouterOS
-- GNS3
+- GNS3 Network Simulation
+- Network Troubleshooting
